@@ -1,10 +1,20 @@
-Time spent in minutes rage:
-0-30:
+30m:
 - Planning structure and components
 - Creating project with Angular Cli
 - Installing dependences
 
-30-60:
+30m:
 - Creating hours.txt
 - Defining main structure with components
-- First commit on git
+- First commit
+
+At this point I was whithout creativity on a Sunday night. But on the day after some ideas came
+into mind and:
+
+1h30m:
+- Defining reducer and actions
+- Creating models
+- Creating utils
+- Starting to create components behaviours
+- Starting to populate main component
+- Second commit

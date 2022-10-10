@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { selectScore } from 'src/app/core/store'
 
 @Component({
   selector: 'app-score',
   templateUrl: './score.component.html',
   styleUrls: ['./score.component.scss']
 })
-export class ScoreComponent implements OnInit {
+export class ScoreComponent {
 
-  constructor() { }
+  /**
+   * receives the score for exhibition
+   */
+  currentScore$ = this.store.select(selectScore);
 
-  ngOnInit(): void {
-  }
+  constructor(private store: Store) { }
 
 }
