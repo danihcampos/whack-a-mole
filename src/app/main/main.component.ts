@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { setGameStatus, selectGamestatus, selectHighestScore } from 'src/app/core/store';
+import { setGameStatus, selectGamestatus, selectHighestScore, selectMoles } from 'src/app/core/store';
 
 @Component({
   selector: 'app-main',
@@ -12,6 +12,8 @@ export class MainComponent implements OnInit {
   selectGamestatus$ = this.store.select(selectGamestatus);
 
   highestScore$ = this.store.select(selectHighestScore);
+
+  selectMoles$ = this.store.select(selectMoles);
 
   constructor(private store: Store) { }
 

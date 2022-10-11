@@ -1,17 +1,22 @@
-<div class="header">
-    <app-score></app-score>
-    <p class="highest-score">
-        Highest Score: {{ highestScore$ | async }}
-    </p>
-</div>
-<div class="body">
-    <ng-container *ngIf="">
-
-    </ng-container>
-    <ng-container *ngIf="">
-
-    </ng-container>
-</div>
-<div class="timer">
-    <app-timer></app-timer>
+<div class="main">
+    <div class="header">
+        <app-score></app-score>
+        <p class="highest-score">
+            Highest Score: {{ highestScore$ | async }}
+        </p>
+    </div>
+    <div class="body">
+        <ng-container *ngIf="(selectGamestatus$ | async) === 'open'">
+            <button (click)="startGame()" class="play-button">PLAY</button>
+        </ng-container>
+        <ng-container *ngIf="(selectGamestatus$ | async) === 'happening'">
+            <app-mole *ngFor="let mole of (selectMoles$ | async)"></app-mole>
+        </ng-container>
+        <ng-container *ngIf="(selectGamestatus$ | async) === 'finished'">
+            <button (click)="startGame()" class="play-button">TRY AGAIN</button>
+        </ng-container>
+    </div>
+    <div class="timer">
+        <app-timer></app-timer>
+    </div>
 </div>

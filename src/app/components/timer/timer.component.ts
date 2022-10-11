@@ -41,7 +41,7 @@ export class TimerComponent implements OnInit {
   }
   
   /**
-   * subscribes to second observable to decrease de timer
+   * subscribes to seconds observable to decrease de timer
    */
   private decreaseTimer() {
     this.secondsSubscription = this.secondsInterval$.subscribe(() => {

@@ -18,3 +18,24 @@ into mind and:
 - Starting to create components behaviours
 - Starting to populate main component
 - Second commit
+
+30min:
+- Adding styles
+- Setting components on main.html
+
+10min
+- Rethinking and changing the idea
+
+50m:
+- Finishing mole compoenent behaviour
+- Adjusting reducers and actions
+- Testing while developing
+
+-------------
++20min:
+- Adding comments
+- Last tests
+- Thinking of maybe include at least an unit test, but realizing there is no more time
+- Last commit
+
+

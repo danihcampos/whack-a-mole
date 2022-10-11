@@ -7,8 +7,7 @@ export const setGameStatus = createAction(
 );
 
 export const updateHighestScore = createAction(
-    '[Main] Update Highest Score',
-    props<{ value: number }>()
+    '[Main] Update Highest Score'
 );
 
 export const whackAMole = createAction(
@@ -21,8 +20,4 @@ export const looseAMole = createAction(
 
 export const decreaseTimer = createAction(
     '[Main] Decrease Timer',
-);
-
-export const finishGame = createAction(
-    '[Main] Update values for a new game',
 );
